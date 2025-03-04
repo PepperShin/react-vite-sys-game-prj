@@ -47,7 +47,7 @@ jsonconfig.json 파일을 만든후
     "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-    "@/_": ["./src/_"] // 절대경로 랙걸린다
+    "@/_": ["./src/_"] // 절대경로 랙걸릴 수 있다. 확인 후 사용
     }
     },
     "exclude": ["node_modules"] //프로젝트 규모가 크다면 성능(intellisense)이 낮아질 수 있는데 이 때 내가 실질적으로 사용하지 않는 파일들을 제외해줄 수 있다.
