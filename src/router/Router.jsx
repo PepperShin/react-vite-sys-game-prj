@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import LottoPage from '../UI/pages/LottoPage'
 import MainLayout from '../UI/layouts/MainLayout'
 import RspPage from '../UI/pages/RspPage'
+import BoardPage from '../UI/pages/BoardPage'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
         path: 'rsp',
         element: <RspPage />,
         loader: () => '가위바위보',
+      },
+      {
+        path: 'boards',
+        element: <BoardPage />,
+        loader: () => '게시판',
       },
     ],
   },
